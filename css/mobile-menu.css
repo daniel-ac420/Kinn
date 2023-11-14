@@ -1,0 +1,34 @@
+.mobile-menu {
+	position: fixed;
+	inset: 0;
+	z-index: 1000;
+	display: none;
+	padding: 80px;
+	background-color: var(--white);
+}
+
+.mobile-menu.active {
+	display: block;
+}
+
+.mobile-menu .logo {
+    display: block;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.mobile-menu .menu-navigation__list {
+	display: flex;
+	flex-direction: column;
+}
+
+.button-close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	padding: 20px;
+	width: ;
+	height: ;
+	font-size: 30px;
+	cursor: pointer;
+}

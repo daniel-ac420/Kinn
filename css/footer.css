@@ -1,0 +1,170 @@
+.footer {
+	margin: 0 8px 8px;
+	padding: 0 8px;
+	color: var(--beige);
+	background-color: var(--lightOlive);
+}
+
+.footer__inner {
+	display: flex;
+	justify-content: space-between;
+	padding: 64px 0 110px;
+}
+
+.footer__menu {
+	display: flex;
+	gap: 125px;
+}
+
+.info {
+	max-width: 260px;
+}
+
+.footer__divider {
+	margin: 17px 0 25px;
+	width: 40px;
+	height: 1px;
+	background-color: var(--beige);
+}
+
+.copyright:hover {
+	color: var(--olive);
+	border: none;
+}
+
+.info .footer__divider {
+	margin: 15px 0 17px;
+}
+
+.email:hover {
+	color: var(--olive);
+}
+
+.footer__list-title {
+	line-height: 18.9px;
+	letter-spacing: 1.575px;
+}
+
+.footer__list-title-box {
+	
+}
+
+.footer__list-item {
+	margin-bottom: 15px;
+}
+
+.footer__list-item:hover {
+	color: var(--olive);
+}
+
+.footer .menu-navigation__item--inner-menu::after {
+	right: unset;
+	transform: translate(50%, -50%);
+}
+
+.socials {
+	padding-top: 8px;
+}
+
+.socials__list {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.socials__link {
+	display: block;
+	width: 22px;
+	height: 22px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border: none;
+}
+
+.socials__link:hover {
+	border: none;
+	filter: brightness(1.5);
+    transform: scale(1.35);
+}
+
+.socials__link--facebook {
+	width: 16px;
+	height: 23px;
+	background-image: url("../images/footer/icons/footer-icon-facebook.svg");
+}
+
+.socials__link--pinterest {
+	background-image: url("../images/footer/icons/footer-icon-pinterest.svg");
+}
+
+.socials__link--instagram {
+	background-image: url("../images/footer/icons/footer-icon-instagram.svg");
+}
+
+
+
+@media (max-width: 1024px) {
+	
+	.footer__inner {
+		padding: 64px 0 64px;
+	}
+
+	.footer__menu {
+		gap: 75px;
+	}
+
+}
+/* ↑↑↑ 1024px ↑↑↑ */
+
+
+
+@media (max-width: 768px) {
+
+	.footer__inner {
+		flex-direction: column;
+		gap: 30px;
+	}
+	
+	.socials__list {
+		justify-content: center;
+		gap: 40px;
+	}
+
+}
+/* ↑↑↑ 768px ↑↑↑ */
+
+
+
+@media (max-width: 480px) {
+
+	.footer__menu {
+		gap: 30px;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.copyright {
+		display: block;
+		padding-bottom: unset;
+		text-align: center;
+		border: none;
+	}
+	
+	.copyright:hover {
+		padding-bottom: unset;
+	}
+
+	.footer__divider, 
+	.info .footer__divider {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.footer__inner {
+		padding: 50px 0 50px;
+	}
+
+}
+/* ↑↑↑ 480px ↑↑↑ */
